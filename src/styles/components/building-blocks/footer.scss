@@ -1,0 +1,20 @@
+.rwb-footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0; bottom: 0; left: 0;
+  height: 50px;
+  min-width: 800px;
+  background: $dark-grey;
+
+  .label {
+    color: white;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .rwb-footer { min-width: 0; }
+}
