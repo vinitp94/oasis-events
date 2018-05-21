@@ -2,7 +2,7 @@
   "name": "react-website-boilerplate",
   "version": "1.0.0",
   "private": true,
-  "description": "React Websit Boilerplate",
+  "description": "React Website Boilerplate",
   "scripts": {
     "start": "webpack-dev-server --devtool eval-source-map --history-api-fallback --open",
     "build": "webpack -p"
