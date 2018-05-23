@@ -20,10 +20,13 @@ This is a boilerplate meant to build static websites using React, Sass, Webpack,
     * Update the **CNAME** file with your domain
 
 #### Local Development, Build, and Deploy Instructions
+* Run ***npm install***
 * Run ***npm start*** to start server and open a new browser window at ***localhost:8080***
 * To deploy:
+    * Change *"/build/bundle.js"* in **index.html** and **404.html** to */[repo-name]/build/bundle.js*
+    * Change *basename* from **src/index.js** from *"/"* to *"/[repo-name]"*
     * After making any changes, run ***npm run build*** to update JavaScript bundle and style map
-    * Commit your changes and push up the gh-pages branch
+    * Commit your changes and push up the ***gh-pages*** branch
     * Changes should automatically go live (make sure the browser doesn't cache your JavaScript and styles)
 
 #### Architecture Notes
