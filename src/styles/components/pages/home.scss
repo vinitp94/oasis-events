@@ -1,25 +1,24 @@
 .rwb-home {
-  .rwb-welcome {
-    width: 80vw;
-    max-width: 1200px;
-    min-width: 800px;
-    margin: auto;
-    padding: 50px;
-    box-sizing: border-box;
-    color: $dark-grey;
+  .home-container {
+    text-align: center;
+
+    .title {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .github-link {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 24px;
+      text-decoration: underline;
+      color: $grey600;
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
   .rwb-home {
-    .rwb-header { display: none; }
 
-    .rwb-welcome {
-      width: 100vw;
-      min-width: 0;
-      padding: 40px 25px;
-    }
-
-    .rwb-footer { display: none; }
   }
 }

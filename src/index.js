@@ -8,9 +8,9 @@ import PageNotFound from './components/pages/page-not-found';
 import './styles/main.scss';
 
 ReactDOM.render(
-  <BrowserRouter basename="/">
+  <BrowserRouter basename='/'>
     <Switch>
-      <Route exact path="/" component={ Home } />
+      <Route exact path='/' component={ Home } />
       <Route component={ PageNotFound } />
     </Switch>
   </BrowserRouter>,
