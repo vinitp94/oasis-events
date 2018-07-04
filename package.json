@@ -1,8 +1,8 @@
 {
-  "name": "react-website-boilerplate",
+  "name": "oasis-events",
   "version": "1.0.0",
   "private": true,
-  "description": "React Website Boilerplate",
+  "description": "Oasis Events",
   "scripts": {
     "start": "webpack-dev-server --devtool eval-source-map --history-api-fallback --open",
     "build": "webpack -p"

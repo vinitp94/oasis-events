@@ -14,6 +14,13 @@ let Utility = {
   },
   getBaseUrl: () => {
     return window.location.origin;
+  },
+  scrollToFooter: () => {
+    window.scroll({
+      top: $('#root').height(),
+      left: 0,
+      behavior: 'smooth'
+    });
   }
 };
 
