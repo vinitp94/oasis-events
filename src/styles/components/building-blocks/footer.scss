@@ -3,7 +3,7 @@
   height: 700px;
   min-width: 800px;
   text-align: center;
-  background: $grey18;
+  background: rgba(8, 8, 8, .5);;
   box-shadow: 0 0 50px $grey15;
 
   .footer-container {
@@ -57,7 +57,7 @@
         .placeholder {
           top: -8px;
           font-size: 12px;
-          background: linear-gradient($grey18, $grey17);
+          background: linear-gradient(#141414, $grey17);
         }
       }
     }

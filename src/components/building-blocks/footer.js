@@ -29,7 +29,7 @@ class Footer extends React.Component {
     return (
       <div className='oe-footer'>
         <div className='footer-container'>
-          <div className='footer-title'>CONTACT</div>
+          <div className='footer-title'>BOOKINGS</div>
 
           <div className={'form-field subject'} onFocus={ this.focusInput.bind(this, 'subject') }>
             <input className='input-elem' onChange={ this.handleUserInput.bind(this, 'subject') }/>
