@@ -1,13 +1,13 @@
 @mixin btn() {
   transition: all .3s;
-  width: 180px;
-  padding: 15px 0;
-  font-size: 15px;
+  width: 160px;
+  padding: 12px 0;
+  font-size: 14px;
   font-weight: 300;
   letter-spacing: 1px;
   text-align: center;
-  color: $grey900;
-  background-color: $grey100;
+  color: $grey18;
+  background-color: $grey3;
   cursor: pointer;
 
   &:hover {
@@ -37,8 +37,4 @@
     top: 0;
     opacity: 1;
   }
-}
-
-@mixin large-box-shadow() {
-  box-shadow: 15px 15px 30px $grey500;
 }

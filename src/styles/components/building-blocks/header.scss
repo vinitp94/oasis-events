@@ -2,6 +2,8 @@ $header-height: 90px;
 
 .oe-header {
   height: $header-height;
+  background: rgba(8, 8, 8, .5);
+  box-shadow: 0 0 50px $grey15;
 
   .header-container {
     @include responsive-container();
@@ -12,7 +14,6 @@ $header-height: 90px;
     .logo {
       font-size: 26px;
       font-weight: 100;
-      color: $grey600;
     }
 
     .contact-btn {
@@ -24,7 +25,6 @@ $header-height: 90px;
     position: fixed;
     top: 0; left: 0; right: 0;
     height: 0;
-    background: rgba(255, 255, 255, .8);
     overflow: hidden;
     z-index: 10;
     transition: height .3s;

@@ -1,4 +1,5 @@
-import React   from 'react';
+import React from 'react';
+import _     from 'lodash';
 
 import Header from '../building-blocks/header';
 import Footer from '../building-blocks/footer';
@@ -37,7 +38,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className={ 'oe-home ' + this.state.bgList[0] }>
+      <div className='oe-home'>
         <Header classToApply={ 'static' }></Header>
         <Header classToApply={ 'dynamic' }></Header>
 
