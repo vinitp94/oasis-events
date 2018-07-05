@@ -1,5 +1,7 @@
-import React from 'react';
-import _     from 'lodash';
+import React        from 'react';
+import Utility      from '../../utility';
+import _            from 'lodash';
+import { Carousel } from 'react-responsive-carousel';
 
 import Header from '../building-blocks/header';
 import Footer from '../building-blocks/footer';
@@ -36,14 +38,51 @@ class Home extends React.Component {
     });
   }
 
+  renderHeaderCarousel() {
+    return (
+      <div className='header-carousel'>
+        <Carousel showThumbs={false} showArrows={false} showStatus={false} showIndicators={false} stopOnHover={false} autoPlay infiniteLoop interval={8000} transitionTime={1200}>
+          <div>
+            <img className='carousel-img' src={ Utility.buildAssetUrl('images/cdj.jpg') }/>
+
+            <div className='img-cover-container'>
+              <div className='img-cover'>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img className='carousel-img' src={ Utility.buildAssetUrl('images/spotlights.jpg') }/>
+
+            <div className='img-cover-container'>
+              <div className='img-cover'>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img className='carousel-img' src={ Utility.buildAssetUrl('images/lasers.jpg') }/>
+
+            <div className='img-cover-container'>
+              <div className='img-cover'>
+              </div>
+            </div>
+          </div>
+        </Carousel>
+      </div>
+    );
+  }
+
   render() {
     return (
       <div className='oe-home'>
         <Header classToApply={ 'static' }></Header>
         <Header classToApply={ 'dynamic' }></Header>
 
+        { this.renderHeaderCarousel() }
+
         <div className='page-container'>
-          <div className='placeholder'>Placeholder</div>
+
         </div>
 
         <Footer></Footer>

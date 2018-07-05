@@ -5,6 +5,7 @@
   text-align: center;
   background: rgba(8, 8, 8, .5);;
   box-shadow: 0 0 50px $grey15;
+  border-top: 1px solid $main;
 
   .footer-container {
     @include responsive-container();
@@ -79,8 +80,13 @@
 
       .developer-credits {
         > a {
+          transition: border .3s;
           padding-bottom: 3px;
           border-bottom: 1px solid white;
+
+          &:hover {
+            border-bottom: 1px solid $main;
+          }
         }
       }
     }

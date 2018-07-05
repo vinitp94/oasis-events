@@ -1,9 +1,13 @@
 $header-height: 90px;
 
 .oe-header {
+  @include opaque-black-bg();
+  position: absolute;
+  top: 0; right: 0; left: 0;
   height: $header-height;
-  background: rgba(8, 8, 8, .5);
+  border-bottom: 1px solid $main;
   box-shadow: 0 0 50px $grey15;
+  z-index: 1000;
 
   .header-container {
     @include responsive-container();
@@ -26,8 +30,15 @@ $header-height: 90px;
       display: flex;
 
       .nav-item {
+        transition: border .3s;
         margin-left: 50px;
+        padding: 6px 0;
+        border-bottom: 1px solid transparent;
         cursor: pointer;
+
+        &:hover {
+          border-bottom: 1px solid $main;
+        }
       }
     }
   }
@@ -38,10 +49,13 @@ $header-height: 90px;
     height: 0;
     overflow: hidden;
     z-index: 10;
+    border-bottom: none;
     transition: height .3s;
+    background: rgba(8, 8, 8, .5);
 
     &.show {
       height: $header-height;
+      border-bottom: 1px solid $main;
     }
   }
 }

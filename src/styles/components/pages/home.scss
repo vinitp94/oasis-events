@@ -1,4 +1,38 @@
+$header-img-height: 500px;
+
 .oe-home {
+  .header-carousel {
+    position: relative;
+    width: 100vw; height: $header-img-height;
+    max-width: 2000px;
+    margin: auto;
+    overflow: hidden;
+
+    .carousel-img {
+      position: relative;
+      bottom: 200px;
+      min-width: 1300px;
+      min-height: 700px;
+    }
+
+    .img-cover-container {
+      position: absolute;
+      top: 0; right: 0; left: 0;
+      width: 90vw; height: $header-img-height;
+      max-width: 1200px;
+      min-width: 800px;
+      margin: auto;
+
+      .img-cover {
+        @include opaque-black-bg();
+        position: absolute;
+        top: 0; left: 0;
+        margin-top: 90px;
+        width: 600px; height: 410px;
+      }
+    }
+  }
+
   .page-container {
     @include responsive-container();
     padding-top: 125px !important;

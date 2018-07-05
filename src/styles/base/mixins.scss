@@ -39,3 +39,7 @@
     opacity: 1;
   }
 }
+
+@mixin opaque-black-bg {
+  background: rgba(0, 0, 0, 0.75);
+}
