@@ -82,7 +82,17 @@ class Home extends React.Component {
         { this.renderHeaderCarousel() }
 
         <div className='page-container'>
+          <div className='section about'>
+            <div className='section-title'>ABOUT US</div>
+          </div>
 
+          <div className='section services'>
+            <div className='section-title'>SERVICES</div>
+          </div>
+
+          <div className='section testimonials'>
+            <div className='section-title'>TESTIMONIALS</div>
+          </div>
         </div>
 
         <Footer></Footer>

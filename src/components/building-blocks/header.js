@@ -19,10 +19,10 @@ class Header extends React.Component {
         scrollAmt = 0;
         break;
       case 'services':
-        scrollAmt = 200;
+        scrollAmt = $('.section.services').offset().top - 200;
         break;
       case 'testimonials':
-        scrollAmt = 400;
+        scrollAmt = $('.section.testimonials').offset().top - 200;
         break;
       case 'bookings':
         scrollAmt = $('#root').height();
