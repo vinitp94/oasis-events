@@ -22,8 +22,13 @@ $header-height: 90px;
       }
     }
 
-    .contact-btn {
-      @include btn();
+    .nav-container {
+      display: flex;
+
+      .nav-item {
+        margin-left: 50px;
+        cursor: pointer;
+      }
     }
   }
 

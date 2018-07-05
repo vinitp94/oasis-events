@@ -66,6 +66,25 @@
       @include btn();
     }
   }
+
+  .bottom-bar {
+    height: 80px;
+    background: black;
+
+    .bottom-container {
+      @include responsive-container();
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .developer-credits {
+        > a {
+          padding-bottom: 3px;
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {

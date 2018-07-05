@@ -48,6 +48,16 @@ class Footer extends React.Component {
 
           <div className={'submit-btn dark'} onClick={ this.submitForm.bind(this) }>SUBMIT</div>
         </div>
+
+        <div className='bottom-bar'>
+          <div className='bottom-container'>
+            <div className='developer-credits'>Developed by <a href='http://mach4.app/' target='_blank'>MACH4 Technologies Inc.</a></div>
+
+            <div className='account-links'>
+
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
