@@ -1,6 +1,5 @@
 .oe-footer {
   right: 0; bottom: 0; left: 0;
-  height: 780px;
   min-width: 800px;
   text-align: center;
   background: rgba(8, 8, 8, .5);;
@@ -15,11 +14,8 @@
     align-items: center;
     padding-bottom: 50px;
 
-    > * {
-      margin: 15px 0;
-    }
-
     .footer-title {
+      margin: 60px 0 20px 0;
       font-size: 28px;
     }
 
@@ -29,9 +25,21 @@
       line-height: 24px;
     }
 
+    .flex-two {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+
+      .form-field {
+        width: 48%;
+      }
+    }
+
     .form-field {
       position: relative;
       width: 80%;
+      margin: 15px 0;
 
       .input-elem {
         transition: all .3s;
@@ -67,6 +75,12 @@
           background: linear-gradient(#141414, $grey17);
         }
       }
+    }
+
+    .service-note {
+      width: 80%;
+      margin: 30px 0 20px 0;
+      text-align: left;
     }
 
     .submit-btn {

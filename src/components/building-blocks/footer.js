@@ -9,6 +9,8 @@ class Footer extends React.Component {
     this.state = {
       subject: '',
       email: '',
+      phone: '',
+      budget: '',
       message: ''
     }
   }
@@ -30,7 +32,7 @@ class Footer extends React.Component {
   render() {
     return (
       <div className='oe-footer'>
-        <div className='footer-container'>
+        <form className='footer-container' onSubmit={ this.submitForm.bind(this) }>
           <div className='footer-title'>BOOKINGS</div>
           <div className='booking-description'>{ 'Thank you for considering Oasis Events for your next event! Please fill out the form below to give us a sense of what you\'re looking for and we\'ll get back to you within 24-48 hours. If you\'re in a rush, not to worry; feel free to call us at (408) 838 7249 instead!' }</div>
 
@@ -44,13 +46,27 @@ class Footer extends React.Component {
             <div className='placeholder'>Email Address</div>
           </div>
 
+          <div className='flex-two'>
+            <div className={'form-field phone'} onFocus={ this.focusInput.bind(this, 'phone') }>
+              <input className='input-elem' onChange={ this.handleUserInput.bind(this, 'phone') }/>
+              <div className='placeholder'>Phone Number</div>
+            </div>
+
+            <div className={'form-field budget'} onFocus={ this.focusInput.bind(this, 'budget') }>
+              <input className='input-elem' onChange={ this.handleUserInput.bind(this, 'budget') }/>
+              <div className='placeholder'>Estimated Budget</div>
+            </div>
+          </div>
+
+          <div className='service-note'>Please select all services you are interested in:</div>
+
           <div className={'form-field message'} onFocus={ this.focusInput.bind(this, 'message') }>
             <textarea className='input-elem' onChange={ this.handleUserInput.bind(this, 'message') }/>
             <div className='placeholder'>Message</div>
           </div>
 
-          <div className={'submit-btn dark'} onClick={ this.submitForm.bind(this) }>SUBMIT</div>
-        </div>
+          <button className={'submit-btn dark'}>SUBMIT</button>
+        </form>
 
         <div className='bottom-bar'>
           <div className='bottom-container'>
