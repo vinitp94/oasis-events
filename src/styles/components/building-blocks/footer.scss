@@ -44,6 +44,16 @@
       }
     }
 
+    .checkbox-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .form-field {
+        margin: 10px 0 30px 0;
+      }
+    }
+
     .form-field {
       position: relative;
       width: 100%;
@@ -81,6 +91,39 @@
           top: -8px;
           font-size: 12px;
           background: linear-gradient(#141414, $grey17);
+        }
+      }
+
+      .checkbox {
+        transition: all .3s;
+        width: 20px; height: 20px;
+        background: $grey12;
+        border: 2px solid $grey16;
+        border-radius: 3px;
+        cursor: pointer;
+
+        &.checked {
+          background: white;
+
+          .checkmark {
+            transition: all .3s;
+            top: 4px; left: 4px;
+            width: 12px; height: 12px;
+          }
+        }
+
+        > .label {
+          position: absolute;
+          top: 0px; left: 32px;
+          font-size: 14px;
+          line-height: 20px;
+          color: white;
+        }
+
+        .checkmark {
+          position: absolute;
+          top: 10px; left: 10px;
+          width: 0; height: 0;
         }
       }
     }
