@@ -16,7 +16,9 @@
     padding-bottom: 80px;
 
     .footer-title {
-      margin-bottom: 30px;
+      margin-bottom: 50px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $main;
       font-size: 28px;
     }
 
@@ -87,6 +89,10 @@
       }
 
       &.selected {
+        .input-elem {
+          box-shadow: 0 0 3px $main;
+        }
+
         .placeholder {
           top: -8px;
           font-size: 12px;
