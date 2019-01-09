@@ -1,19 +1,9 @@
-import React from 'react';
+import React   from 'react';
+import Utility from '../../utility';
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount() {
-    setTimeout(() => {
-      $('.oe-header > .header-container > .logo').addClass('spread');
-    }, 100);
-  }
-
   scrollToSection(section) {
     let scrollAmt;
-
     switch (section) {
       case 'about':
         scrollAmt = 0;
@@ -28,7 +18,6 @@ class Header extends React.Component {
         scrollAmt = $('.oe-footer').offset().top - 50;
         break;
     }
-
     window.scroll({
       top: scrollAmt,
       left: 0,
@@ -40,13 +29,13 @@ class Header extends React.Component {
     return (
       <div className={'oe-header ' + (this.props.classToApply || '')}>
         <div className='header-container'>
-          <div className='logo'>OASIS EVENTS</div>
+          <img className='logo' src={Utility.buildAssetUrl('logos/oe.png')}/>
 
           <div className='nav-container'>
-            <div className='nav-item' onClick={ this.scrollToSection.bind(this, 'about') }>ABOUT</div>
-            <div className='nav-item' onClick={ this.scrollToSection.bind(this, 'services') }>SERVICES</div>
-            <div className='nav-item' onClick={ this.scrollToSection.bind(this, 'testimonials') }>TESTIMONIALS</div>
-            <div className='nav-item' onClick={ this.scrollToSection.bind(this, 'bookings') }>BOOKINGS</div>
+            <div className='nav-item' onClick={this.scrollToSection.bind(this, 'about')}>about us</div>
+            <div className='nav-item' onClick={this.scrollToSection.bind(this, 'services')}>services</div>
+            <div className='nav-item' onClick={this.scrollToSection.bind(this, 'testimonials')}>testimonials</div>
+            <div className='nav-item' onClick={this.scrollToSection.bind(this, 'bookings')}>bookings</div>
           </div>
         </div>
       </div>
