@@ -1,0 +1,31 @@
+.oe-under-construction {
+  padding: 100px;
+  text-align: center;
+
+  > * {
+    font-size: 24px;
+  }
+
+  .logo {
+    width: 200px; height: auto;
+    padding-bottom: 32px;
+  }
+
+  .message {
+    line-height: 36px;
+  }
+
+  .link-text {
+    font-size: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $main;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .oe-under-construction {
+    padding: 120px 60px;
+    font-size: 24px;
+  }
+}

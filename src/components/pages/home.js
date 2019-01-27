@@ -3,8 +3,9 @@ import Utility    from '../../utility';
 import _          from 'lodash';
 import {Carousel} from 'react-responsive-carousel';
 
-import Header from '../building-blocks/header';
-import Footer from '../building-blocks/footer';
+import Header            from '../building-blocks/header';
+import Footer            from '../building-blocks/footer';
+import UnderConstruction from '../pages/under-construction';
 
 class Home extends React.Component {
   componentDidMount() {
@@ -69,29 +70,31 @@ class Home extends React.Component {
     );
   }
 
+  // <Header classToApply={'static'}></Header>
+  // <Header classToApply={'dynamic'}></Header>
+  //
+  // {this.renderHeaderCarousel()}
+  //
+  // <div className='page-container'>
+  //   <div className='section about'>
+  //     <div className='section-title'>about us</div>
+  //   </div>
+  //
+  //   <div className='section services'>
+  //     <div className='section-title'>services</div>
+  //   </div>
+  //
+  //   <div className='section testimonials'>
+  //     <div className='section-title'>testimonials</div>
+  //   </div>
+  // </div>
+  //
+  // <Footer></Footer>
+
   render() {
     return (
       <div className='oe-home'>
-        <Header classToApply={'static'}></Header>
-        <Header classToApply={'dynamic'}></Header>
-
-        {this.renderHeaderCarousel()}
-
-        <div className='page-container'>
-          <div className='section about'>
-            <div className='section-title'>about us</div>
-          </div>
-
-          <div className='section services'>
-            <div className='section-title'>services</div>
-          </div>
-
-          <div className='section testimonials'>
-            <div className='section-title'>testimonials</div>
-          </div>
-        </div>
-
-        <Footer></Footer>
+        <UnderConstruction></UnderConstruction>
       </div>
     );
   }
